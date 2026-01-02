@@ -1,0 +1,215 @@
+<!-- Starting Point Day 1 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Pure HTML5 Showcase of Zenmi's 100 Days of Code">
+    <title>100 Days Of Code Day 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+ </head>
+ <body>
+    <h1>100 Days Of Code - Semantic HTML</h1>
+    <header>
+        <h1>Zenmi's Portfolio</h1>
+        <nav>
+            <ul>
+                <li> <a href="#media">Media</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#interactive">Interactive</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main> 
+        <section id="text">
+            <h2>Typography Showcase</h2>
+            <article>
+                <h3>Heading Lvl 3</h3>
+                <p>This is an example of a standard paragraph, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa eveniet nulla modi enim nihil perspiciatis accusamus, atque, alias molestiae repellendus praesentium harum sit voluptatum quae voluptatem laudantium tenetur ad. <br> <mark>Highlighted</mark> Inline elements were also used:
+                </p>
+                <ul>
+                    <li>
+                        <strong>strong (Bold)</strong> for Importance
+                    </li>
+                    <li>
+                        <em>em (Italic)</em> for Emphasis and stress
+                    </li>
+                    <li>
+                        <small>Small Text</small> for disclaimers
+                    </li>
+                    <li>
+                        <del>Deleted text</del> and <ins>Inserted text</ins> for edits
+                    </li>
+                    <li>
+                    l <sup>2</sup> for superscript and E=MC <sub>5</sub> for subscripts
+                    </li>
+                    <li> <code>console.log('Hello world, Zenmi Has arrived')</code> for inline code
+                    </li>
+                    <li>Press <kbd> Ctrl</kbd> + <kbd> C </kbd> to copy
+                    </li>
+                </ul>
+                <blackquote>
+                    "This is a blackquote. It visually indents text to show it is from another source.  "
+                    <cite> -MDN Web Docs</cite>
+                    </blackquote>
+                    <pre>
+                        function codeBlock() {
+                            return "Preserve whitespace and formatting";
+                        }
+                    </pre>
+            </article>
+        </section>
+
+        <hr>
+        <section id="Media" >
+            <h2>
+                Media Elements
+            </h2>
+            <figure>
+                <picture>
+                    <source>srcset="https://via.placeholder.com/600x400.webp" type="image/webp">
+                    <img 
+                    src="https://via.placeholder.com/600x400.web" 
+                    alt="placeholderimage"
+                    >
+                </picture>
+                <figcaption>Fig 1.1 : A responsive image using the picture tag.</figcaption>
+            </figure>
+            <h3>Video Player</h3>
+            <video controls width="600" height="400" poster="https://via.placeholder.com/600x400.web">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <track src="subtitle_en.vtt" kind="subtitles" src="en" label="English">
+                <!-- 100 Days of Code - Day 2 -->
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <hr>
+        <section id="data">
+            <h2>Data Representation</h2>
+            <table border="1">
+                <caption>
+                    <strong>Weekly Study Schedule</strong>
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Hours</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            Monday
+                        </th>
+                        <td>HTML5 Deep Dive</td>
+                        <td>5Hrs 😭😭</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tuesday</th>
+                        <td>CSS Box Model</td>
+                        <td>2Hrs</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                          <th scope="row" colspan="2">Total Hours</th>
+                          <td>7Hrs</td>
+                        </tr>
+                </tfoot>
+            </table>
+            <h3>Definition List</h3>
+            <dl>
+                <dt><strong>HTML</strong></dt>
+                <dd>HyperText Markup Language The skeleton of the web.</dd>
+                <dt><strong>CSS</strong></dt>
+                <dd>Cascading Style Sheets - The Makeup of the web.</dd>
+            </dl>
+        </section>
+        <hr>
+        <section id="Interactive">
+            <h2>Interactive & New Semantic Elements</h2>
+            <details>
+                <summary><strong>Click to Reveal the UNKNOWN (Native Accordion)</strong></summary>
+                <p>This content is hidden by default and only revealed when the user clicks the summary. No JavaScript required.</p>
+            </details>
+            <br>
+
+            <label for="progress">Download Progress:</label>
+            <progress id="progress" value="50" max="100">50%</progress>
+            <br>
+            <label for="disk">Disk Usage:</label>
+            <meter id="disk" value="50" min="0" max="100">70%</meter>
+
+            <h3>Native Dialog Modal</h3>
+            <p>Note: Without JS, this is just statically visible, but regardless its still a very good and useful tag</p>
+            <dialog open>
+                <p>This is the new <code>&lt;dialog&gt;</code>element</p>
+                <form method="dialog">
+                    <button>Close</button>
+                </form>
+            </dialog>
+        </section>
+        <hr>
+
+        <section id="Forms">
+                <h2>Complex Form Elements.</h2>
+                <form action="/submit" method="POST">
+                    <fieldset>
+                        <legend>User Informaation</legend>
+
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="E.g Zenmisan" name="username" required autofocus>
+                        <br><br>
+
+                        <label for="color">Favorite Color:</label>
+                        <input type="color" id="color" name="color">
+                        <br><br>
+
+                        <label for="birthdate">Date Of Birth:</label>
+                        <input type="date" id="birthdate" name="birthdate">
+                        <br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <label for="skill">Skill</label>
+                        <input type="range" id="skill" name="skill" min="0" max="100">
+                        <br><br>
+                        <label for="browser">Preffered Browser:</label>
+                        <input type="browser" id="browser" name="browser">
+                        <datalist id="browser">
+                            <option value="Chrome">
+                            <option value="FireFox">
+                            <option value="Safari">
+                            <option value="Edge">
+                            <option value="Brave">
+                        </datalist>
+                        <br><br>
+
+                        <label for="marketting">Recieve Marketting Newsletter?</label>
+                        <input type="checkbox" id="marketting" name="marketting" checked>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit Data</button>
+                    <button type="reset">Reset Form</button>
+                </form>
+            </section>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            <small>
+                Build By <a href="https://x.com/zenmisan">Zenmi</a> Using Pure Html No CSS No JS ( thus no finisse to it , .... well yet )
+                TIME: <time datetime="2026-01-02">January 2nd, 2026</time>
+            </small>
+        </p>
+        <address>
+            Lagos, Nigeria <br>
+            <a href="mailto:zenmisan@gmail.com">Zenmian@gmail.com</a>
+        </address>
+    </footer>
+ </body>
+ </html>

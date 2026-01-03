@@ -1,0 +1,63 @@
+<!-- 100 Days Of Code - Day 3  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Media</title>
+</head>
+<body>
+    <header>
+        <h1>The Gallery</h1>
+        <p>Optimize media for the modern web.</p>
+        <a href="index.html">← Back to Home</a>
+    </header>
+        <main>
+            <article>
+                <h2>1. The "Picture" tag (Art of Direction)</h2>
+                <p>Resize your browser window! The image below changes completely based on screen size.</p>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="https://placehold.co/800x400/2980b9/ffffff?text=Desktop+Wide+View">
+                    <source media="(min-width: 600px)" srcset="https://placehold.co/400x400/e74c3c/ffffff?text=Mobile+Square+View">
+                    <img src="https://via.placeholder.com/900x600.png?text=Large+Image" alt="Responsive Image Example">
+                </picture>
+            </article>
+            <hr>
+
+            <article>
+                <h2>2. SVGs (Maths Images)</h2>
+                <p>This star is in code. You can change its color by changing the fill attribute below.</p>
+                <svg width="100" height="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="gold">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </article>
+
+            <hr>
+
+            <article>
+                <h2>3. lazy Loading</h2>
+                <p>
+                    This image won't load untill you scroll near it. this saves data and speeds up initial page load times.
+                </p>
+                <br><br><br><br><br><br><br><br><br><br>
+                <img 
+                src="https://placeholder.co/600x400/27ae60/ffffff?"
+                text="Lazy+Loaded+Image"
+                 alt="Green placeholder"
+                 loading="lazy"
+                 width="600"
+                 height="400">
+            </article>
+
+            <article>
+                <h2>4. Video (with Captions)</h2>
+                <video controls width="100%">
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm"> 
+                    <track kind="captions" src="" srclang="en" label="English">Your Browser does not support HTML5 video.
+                </video>
+            </article>
+        </main>
+        <footer><p>Day 3 Complete. <a href="contact.html">HireMe</a></p>
+        </footer>
+</body>
+</html>

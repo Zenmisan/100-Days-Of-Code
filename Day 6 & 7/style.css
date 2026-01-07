@@ -1,0 +1,73 @@
+/* RESET: This removes annoying default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* --- FLEXBOX CONTAINER (Day 7) --- */
+.pricing-container {
+    display: flex;             
+    justify-content: center;   /* Center cards horizontally */
+    align-items: center;       /* Center cards vertically */
+    gap: 20px;                 /* Space between cards */
+    padding: 20px;
+    flex-wrap: wrap;           /* Allow wrapping on small screens */
+    min-height: 60vh;
+}
+
+/* --- THE BOX MODEL (Day 6) --- */
+.card {
+    background: white;
+    border: 1px solid #ddd;    
+    border-radius: 8px;
+    padding: 30px;             
+    width: 250px;              
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    
+    /* Nesting Flexbox: Using flex inside a card to stack content */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* FEATURED CARD (The "Pop") */
+.featured {
+    border: 2px solid #6c5ce7; 
+    transform: scale(1.1);     
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6c5ce7;
+}
+
+button {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #5a4ad1;
+}

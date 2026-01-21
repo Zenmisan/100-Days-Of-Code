@@ -1,0 +1,65 @@
+/* Global Weather */
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Cyan Gradient */
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.weather-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 320px;
+    text-align: center;
+}
+
+/* SEARCH BAR STYLING */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1; /* Space utilization */
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus { border-color: #4facfe; }
+
+button {
+    background: #4facfe;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.2s;
+}
+
+button:hover { background: #00f2fe; }
+
+/* DATA DISPLAY */
+.divider {
+    height: 2px;
+    background: #f0f0f0;
+    margin: 15px 0;
+}
+
+#temperature {
+    font-size: 3.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+#description { color: #666; }

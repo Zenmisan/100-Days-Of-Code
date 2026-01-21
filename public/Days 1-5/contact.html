@@ -1,0 +1,56 @@
+<!-- 100 Days Of Code - Day 3  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Zenmi</title>
+</head>
+<body>
+    <header>
+        <h1>Start a Project</h1>
+        <p>Tell me about your vision</p>
+        <a href="index.html">← Back to Home</a>
+    </header>
+
+    <main>
+        <form action="httpbin.org/post" method="post">
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" placeholder="Jason Joe" required> 
+                <br><br>
+
+                <label for="phone">Phone Number(Country Code + Number):</label>
+                <input type="tel" id="phone" placeholder="+2348012345678" required title="Please enter your phone number with the country code">
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Project Info</legend>
+                <label for="Budget">Estimated Budget(USD):</label>
+                <input type="number" id="budget" name="budget" min="100" step="50">
+                <br><br>
+               
+                <label for="deadline">Desired Deadline:</label>
+                <input type="date" id="deadline" name="deadline" required min="2026-01-03">
+                <br><br>
+
+                <label for="tech-stack">Preferred Tech Stack:</label>
+                <input list="tech-options" name="stack" id="tech-stack">
+                <datalist id="tech-options">
+                    <option value="HTML5, CSS3, JavaScript">
+                    <option value="React, Node.js, Express">
+                    <option value="Python, Django">
+                    <!-- <option value="Ruby on Rails">
+                    <option value="PHP, Laravel">
+                    <option value="Java, Spring Boot">
+                    <option value="C#, .NET"> -->
+                </datalist>
+                <br><br>
+            </fieldset>
+            <button type="submit">Send Proposal</button>
+        </form>
+    </main>
+    
+</body>
+</html>

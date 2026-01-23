@@ -8,6 +8,25 @@ body {
     margin: 0;
 }
 
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: #e0e5ec;
+    color: #6c5ce7;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 5px 5px 10px #b8c0cc, -5px -5px 10px #ffffff;
+    transition: all 0.2s;
+    z-index: 1000;
+}
+.back-btn:hover {
+    box-shadow: 2px 2px 5px #b8c0cc, -2px -2px 5px #ffffff;
+}
+
 .card {
     background: white;
     padding: 40px;

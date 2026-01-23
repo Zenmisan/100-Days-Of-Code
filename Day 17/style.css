@@ -1,12 +1,32 @@
 /* Global Weather */
 body {
-    background: linear-gradient(to right, #4facfe, #00f2fe); /* Cyan Gradient */
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     font-family: 'Segoe UI', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #4facfe;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: all 0.3s;
+    z-index: 1000;
+}
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 .weather-card {
@@ -18,7 +38,6 @@ body {
     text-align: center;
 }
 
-/* SEARCH BAR STYLING */
 .search-box {
     display: flex;
     gap: 10px;
@@ -26,7 +45,7 @@ body {
 }
 
 input {
-    flex: 1; /* Space utilization */
+    flex: 1;
     padding: 10px;
     border: 2px solid #eee;
     border-radius: 8px;
@@ -49,7 +68,6 @@ button {
 
 button:hover { background: #00f2fe; }
 
-/* DATA DISPLAY */
 .divider {
     height: 2px;
     background: #f0f0f0;

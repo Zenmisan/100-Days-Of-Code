@@ -14,6 +14,30 @@ body {
     margin: 0;
 }
 
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    color: var(--neon-color);
+    border: 2px solid var(--neon-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: all 0.3s;
+    z-index: 1000;
+    box-shadow: 0 0 10px var(--neon-color);
+}
+.back-btn:hover {
+    background: var(--neon-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--neon-color), inset 0 0 10px rgba(111, 0, 255, 0.5);
+}
+
 .container {
     text-align: center;
     border: 4px solid var(--neon-color); 
@@ -26,15 +50,11 @@ body {
     font-size: 8rem;
     margin: 0;
     color: white;
-    /* The Glow Effect */
     text-shadow: 
         0 0 10px var(--neon-color),
         0 0 20px var(--neon-color),
         0 0 40px var(--neon-color),
         0 0 80px var(--neon-color);
-    
-    /* 2. THE ANIMATION CONNECTION */
-    /* name | duration | timing | delay | iteration */
     animation: flicker 1.5s infinite alternate;
 }
 
@@ -46,19 +66,15 @@ p {
     font-weight: bold;
 }
 
-/* 3. THE KEYFRAMES */
 @keyframes flicker {
-    /* At 0% of the time... */
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        opacity: 1;
         text-shadow: 
             0 0 10px var(--neon-color),
-            0 0 40px var(--neon-color);
+            0 0 20px var(--neon-color),
+            0 0 40px var(--neon-color),
+            0 0 80px var(--neon-color);
     }
-    
-   
     20%, 24%, 55% {
-        opacity: 0.5; /* Dim */
         text-shadow: none;
     }
 }

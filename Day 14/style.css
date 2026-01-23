@@ -9,6 +9,29 @@ body {
     margin: 0;
 }
 
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 18px;
+    background: #16213e;
+    color: #533483;
+    border: 1px solid #533483;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+.back-btn:hover {
+    background: #533483;
+    color: #16213e;
+    box-shadow: 0 0 15px rgba(83, 52, 131, 0.5);
+}
+
 .security-card {
     background-color: #16213e;
     padding: 30px;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 23: Crypto Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+        <header>
+            <h1>My Portfolio</h1>
+            <div class="total-box">
+                <small>Total Net Worth</small>
+                <h2 id="total-value">$0.00</h2>
+            </div>
+        </header>
+
+        <div class="controls">
+            <button id="show-all" class="active">All Assets</button>
+            <button id="show-gainers">📈 Gainers Only</button>
+            <button id="show-losers">📉 Losers Only</button>
+        </div>
+
+        <div id="asset-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

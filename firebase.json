@@ -1,16 +1,23 @@
 {
   "hosting": {
-    "public": "./",
+    "public": ".",
     "site": "codedays-zenmi",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/.git/**",
+      "**/.firebase/**",
+      "**/node_modules/**",
+      ".gitignore",
+      ".firebaserc",
+      "README.md",
+      "**/package.json",
+      "**/package-lock.json"
     ],
     "redirects": [
       {
         "source": "/",
-        "destination": "/Day 20/index.html",
+        "destination": "/Day%2020/index.html",
         "type": 301
       }
     ]

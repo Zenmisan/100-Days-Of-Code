@@ -7,6 +7,27 @@ body {
     padding-top: 50px;
 }
 
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.3);
+    transition: all 0.3s;
+    z-index: 1000;
+}
+.back-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+}
+
 .dashboard {
     width: 400px;
     background: #1e1e1e;

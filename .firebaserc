@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "zentribe-e8ba2"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }

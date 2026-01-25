@@ -14,12 +14,44 @@
       "**/package.json",
       "**/package-lock.json"
     ],
-    "redirects": [
-      {
-        "source": "/",
-        "destination": "/Day%2020/index.html",
-        "type": 301
-      }
+    "rewrites": [
+      { "source": "/day1-5", "destination": "/Days 1-5/index.html" },
+      { "source": "/day1-5/**", "destination": "/Days 1-5/index.html" },
+      { "source": "/day6-7", "destination": "/Day 6 & 7/Index.html" },
+      { "source": "/day6-7/**", "destination": "/Day 6 & 7/Index.html" },
+      { "source": "/day8-9", "destination": "/Day 8 & 9/inde.html" },
+      { "source": "/day8-9/**", "destination": "/Day 8 & 9/inde.html" },
+      { "source": "/day10", "destination": "/Day 10/index.html" },
+      { "source": "/day10/**", "destination": "/Day 10/index.html" },
+      { "source": "/day11", "destination": "/Day 11/index.html" },
+      { "source": "/day11/**", "destination": "/Day 11/index.html" },
+      { "source": "/day12", "destination": "/Day 12/index.html" },
+      { "source": "/day12/**", "destination": "/Day 12/index.html" },
+      { "source": "/day13", "destination": "/Day 13/index.html" },
+      { "source": "/day13/**", "destination": "/Day 13/index.html" },
+      { "source": "/day14", "destination": "/Day 14/index.html" },
+      { "source": "/day14/**", "destination": "/Day 14/index.html" },
+      { "source": "/day15", "destination": "/Day 15/index.html" },
+      { "source": "/day15/**", "destination": "/Day 15/index.html" },
+      { "source": "/day16", "destination": "/Day 16/index.html" },
+      { "source": "/day16/**", "destination": "/Day 16/index.html" },
+      { "source": "/day17", "destination": "/Day 17/index.html" },
+      { "source": "/day17/**", "destination": "/Day 17/index.html" },
+      { "source": "/day19", "destination": "/Day 19/index.html" },
+      { "source": "/day19/**", "destination": "/Day 19/index.html" },
+      { "source": "/day20", "destination": "/Day 20/index.html" },
+      { "source": "/day20/**", "destination": "/Day 20/index.html" },
+      { "source": "/day21", "destination": "/Day 21/index.html" },
+      { "source": "/day21/**", "destination": "/Day 21/index.html" },
+      { "source": "/day22", "destination": "/Day 22/index.html" },
+      { "source": "/day22/**", "destination": "/Day 22/index.html" },
+      { "source": "/day23", "destination": "/Day 23/index.html" },
+      { "source": "/day23/**", "destination": "/Day 23/index.html" },
+      { "source": "/day24", "destination": "/Day 24/index.html" },
+      { "source": "/day24/**", "destination": "/Day 24/index.html" },
+      { "source": "/day25", "destination": "/Day 25/index.html" },
+      { "source": "/day25/**", "destination": "/Day 25/index.html" },
+      { "source": "/", "destination": "/Day 20/index.html" }
     ]
   }
 }

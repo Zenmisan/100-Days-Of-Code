@@ -1,5 +1,5 @@
-import Task from './Tasks.js';
-import Store from './Storage.js';
+import Task from '/Day%2025/Tasks.js';
+import Store from '/Day%2025/Storage.js';
 
 // DOM Elements
 const form = document.getElementById('task-form');

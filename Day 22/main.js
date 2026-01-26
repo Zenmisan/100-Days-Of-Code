@@ -1,4 +1,4 @@
-import { calculateArea, calculateCircumference, PI } from './geometry.js';
+import { calculateArea, calculateCircumference, PI } from '/Day%2022/geometry.js';
 
 // 1.DOM Elements
 const input = document.getElementById('radius');

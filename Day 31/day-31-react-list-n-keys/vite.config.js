@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/dist-day31/',
+  base: '/build/dist-day31/',
   plugins: [react()],
 })

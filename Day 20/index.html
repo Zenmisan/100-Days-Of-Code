@@ -4,6 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../zenmi.svg" type="image/svg+xml">
+    
+    <!-- Prefetch all day pages for faster navigation -->
+    <link rel="prefetch" href="/day1">
+    <link rel="prefetch" href="/day2">
+    <link rel="prefetch" href="/day3">
+    <link rel="prefetch" href="/day4">
+    <link rel="prefetch" href="/day5">
+    <link rel="prefetch" href="/day6">
+    <link rel="prefetch" href="/day7">
+    <link rel="prefetch" href="/day8">
+    <link rel="prefetch" href="/day9">
+    <link rel="prefetch" href="/day10">
+    <link rel="prefetch" href="/day11">
+    <link rel="prefetch" href="/day12">
+    <link rel="prefetch" href="/day13">
+    <link rel="prefetch" href="/day14">
+    <link rel="prefetch" href="/day15">
+    <link rel="prefetch" href="/day16">
+    <link rel="prefetch" href="/day17">
+    <link rel="prefetch" href="/day18">
+    <link rel="prefetch" href="/day19">
+    <link rel="prefetch" href="/day21">
+    <link rel="prefetch" href="/day22">
+    <link rel="prefetch" href="/day23">
+    <link rel="prefetch" href="/day24">
+    <link rel="prefetch" href="/day25">
+    <link rel="prefetch" href="/day26">
+    <link rel="prefetch" href="/day27">
+    <link rel="prefetch" href="/day28">
+    <link rel="prefetch" href="/day29">
+    <link rel="prefetch" href="/day30">
+    <link rel="prefetch" href="/day31">
+    <link rel="prefetch" href="/day32">
+    <link rel="prefetch" href="/day33">
+    <link rel="prefetch" href="/day34">
+    
+    <!-- DNS prefetch for external APIs -->
+    <link rel="dns-prefetch" href="https://api.kanye.rest">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Zenmisan | Fullstack Developer</title>
     <meta name="description" content="Portfolio of Zenmi, A Fullstack Developer specializing in building modern web applications.">
@@ -63,11 +102,11 @@
         <p><small>Based in Lagos, NG 🇳🇬</small></p>
         <div class="stats">
             <div class="stat-box">
-                <div class="stat-number">33+</div>
+                <div class="stat-number">34+</div>
                 <div class="stat-label">Projects Completed</div>
             </div>
             <div class="stat-box">
-                <div class="stat-number">33+</div>
+                <div class="stat-number">34+</div>
                 <div class="stat-label">Days of Coding</div>
             </div>
             <div class="stat-box">
@@ -233,6 +272,12 @@
             <a href="/day33" class="card">
                 <h3>Day 33: React useRef</h3>
                 <p>useRef hook and DOM manipulation in React</p>
+                <span class="tag multi">React</span>
+            </a>
+
+            <a href="/day34" class="card">
+                <h3>Day 34: React Custom Hooks</h3>
+                <p>Creating and using custom React hooks</p>
                 <span class="tag multi">React</span>
             </a>
         </div>
@@ -515,6 +560,15 @@
             </div>
             <a href="/day33" class="view-live" target="_blank">View Project</a>
         </div>
+
+        <div class="embedded-project">
+            <div class="project-info">
+                <h3>Day 34: React Custom Hooks - Hook Creation</h3>
+                <p><strong>Technologies:</strong> React, Custom Hooks, API Integration</p>
+                <p><strong>What I Learned:</strong> Creating custom hooks, hook composition, reusing hook logic, custom hook patterns, API fetching with hooks</p>
+            </div>
+            <a href="/day34" class="view-live" target="_blank">View Project</a>
+        </div>
     </div>
 
     <script>
@@ -531,6 +585,17 @@
                 btn.classList.remove('active');
             });
             event.target.classList.add('active');
+        }
+    </script>
+
+    <script>
+        // Register service worker for offline support and caching
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js').then(reg => {
+                console.log('Service Worker registered successfully:', reg);
+            }).catch(err => {
+                console.log('Service Worker registration failed:', err);
+            });
         }
     </script>
 

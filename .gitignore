@@ -72,4 +72,4 @@ node_modules/
 public/
 
 # Build output
-dist/
+build/

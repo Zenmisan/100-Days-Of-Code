@@ -35,7 +35,8 @@ const urlsToCache = [
   '/day33',
   '/day34',
   '/day35',
-  '/day36'
+  '/day36',
+  '/day37'
 ];
 
 // Install event - cache all pages

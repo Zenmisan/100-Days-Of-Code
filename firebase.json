@@ -73,6 +73,8 @@
       { "source": "/day35/**", "destination": "/build/dist-day35/index.html" },
       { "source": "/day36", "destination": "/build/dist-day36/index.html" },
       { "source": "/day36/**", "destination": "/build/dist-day36/index.html" },
+      { "source": "/day37", "destination": "/build/dist-day37/index.html" },
+      { "source": "/day37/**", "destination": "/build/dist-day37/index.html" },
       { "source": "/", "destination": "/Day 20/index.html" }
     ]
   }
